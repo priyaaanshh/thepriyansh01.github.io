@@ -12,16 +12,24 @@
   --tw-gradient-to: #db2777 var(--tw-gradient-to-position);
 }
 
+.btn-gradient {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #a855f7 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(168, 85, 247, 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #db2777 var(--tw-gradient-to-position);
+}
+
 @layer base {
   .dark {
-    --dark-color-900: hsl(0, 0%, 9%);
-    --dark-color-700: hsl(250, 50%, 15%);
+    --dark-color-900: hsl(221, 39%, 11%);
+    --dark-color-700: hsl(215, 28%, 17%);
     --light-color-600: hsl(0, 0%, 20%);
     --light-color-400: hsl(183, 26%, 57%);
     --light-color-100: hsl(0, 0%, 90%);
 
-    --dark-shade-900: 0, 0%, 9%;
-    --dark-shade-700: 0, 0%, 20%;
+    --dark-shade-900: 221, 0%, 11%;
+    --dark-shade-700: 215, 0%, 17%;
     --light-shade-600: 0 0% 20%;
     --light-shade-400: 183, 26%, 35%;
     --light-shade-100: 0, 0%, 90%;

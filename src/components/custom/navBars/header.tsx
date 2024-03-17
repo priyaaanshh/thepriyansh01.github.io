@@ -1,39 +1,51 @@
 "use client";
 import React from 'react'
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import Logo from '../../../assets/images/Logo.jpg'
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
-    const router = useRouter();
-    const name = "Priyansh Sahu";
+    const pathname = usePathname();
+
+    const isActive = (path: string) => {
+        return pathname === path ? 'text-gray-100 bg-secondary shadow-lg shadow-black/25' : 'text-white hover:text-bold hover:bg-slate-300/20 duration-300';
+    };
     return (
         <div className='flex justify-center items-center fixed top-0 w-full py-2'>
-            <div className="mt-4 hidden w-max flex-wrap justify-center space-x-1 rounded-[var(--radius)] border border-muted bg-primary p-2 shadow-lg shadow-black/45 backdrop-blur-md md:flex">
-                <Link href='/' className={`flex justify-center items-center rounded-full font-semibold hover:text-gray-100 md:px-4 md:text-lg bg-secondary px-4 py-2 `}>
-                    <div className='text-lg font-semibold'>Home</div>
-                </ Link>
+            <div className="mt-4 hidden w-max flex-wrap justify-center space-x-1 rounded-[var(--radius)] border border-muted bg-slate-800/70 p-2 shadow-lg shadow-black/45 backdrop-blur md:flex">
+                <Link href='/' passHref>
+                    <div className={`flex justify-center items-center rounded-full font-semibold md:px-4 md:text-lg px-4 py-2 ${isActive('/')}`}>
+                        Home
+                    </div>
+                </Link>
 
-                <Link href='/' className={`flex justify-center items-center rounded-full font-semibold hover:text-gray-100 md:px-4 md:text-lg px-4 py-2 `}>
-                    <div className='text-lg font-semibold'>Projects</div>
-                </ Link>
+                <Link href='/projects' passHref>
+                    <div className={`flex justify-center items-center rounded-full font-semibold md:px-4 md:text-lg px-4 py-2 ${isActive('/projects')}`}>
+                        Projects
+                    </div>
+                </Link>
 
-                <Link href='/' className={`flex justify-center items-center rounded-full font-semibold hover:text-gray-100 md:px-4 md:text-lg px-4 py-2 `}>
-                    <div className='text-lg font-semibold'>Blogs</div>
-                </ Link>
+                <Link href='/blogs' passHref>
+                    <div className={`flex justify-center items-center rounded-full font-semibold md:px-4 md:text-lg px-4 py-2 ${isActive('/blogs')}`}>
+                        Blogs
+                    </div>
+                </Link>
 
-                <Link href='/' className={`flex justify-center items-center rounded-full font-semibold hover:text-gray-100 md:px-4 md:text-lg px-4 py-2 `}>
-                    <div className='text-lg font-semibold'>Experience</div>
-                </ Link>
+                <Link href='/experience' passHref>
+                    <div className={`flex justify-center items-center rounded-full font-semibold md:px-4 md:text-lg px-4 py-2 ${isActive('/experience')}`}>
+                        Experience
+                    </div>
+                </Link>
 
-                <Link href='/' className={`flex justify-center items-center rounded-full font-semibold hover:text-gray-100 md:px-4 md:text-lg px-4 py-2 `}>
-                    <div className='text-lg font-semibold'>Contact Me</div>
-                </ Link>
-
+                <Link href='/contact' passHref>
+                    <div className={`flex justify-center items-center rounded-full font-semibold md:px-4 md:text-lg px-4 py-2 ${isActive('/contact')}`}>
+                        Contact Me
+                    </div>
+                </Link>
             </div>
         </div>
     )
