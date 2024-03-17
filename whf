@@ -1,0 +1,17 @@
+[33mcommit 551f310530374686875a323ff6482b23525aafe7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: thepriyansh01 <priyansh.m.2002@gmail.com>
+Date:   Sun Mar 17 14:31:22 2024 +0530
+
+    removed dist
+
+[33mcommit 377e4c707374f9336c9724c550a2abdbdd69de8d[m
+Author: Priyansh Sahu <124820498+thepriyansh01@users.noreply.github.com>
+Date:   Sun Mar 17 14:24:52 2024 +0530
+
+    Create nextjs.yml
+
+[33mcommit 085c90ef8ead294f0ec377c50a939baf54dbd1a2[m
+Author: thepriyansh01 <priyansh.m.2002@gmail.com>
+Date:   Sun Mar 17 14:24:08 2024 +0530
+
+    adding initial template
