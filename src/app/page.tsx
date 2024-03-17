@@ -5,6 +5,8 @@ const Home = () => {
   return (
     <main className='flex flex-col items-center '>
       <Dashboard />
+      <Dashboard />
+      <Dashboard />
     </main>
   )
 }
