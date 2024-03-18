@@ -5,14 +5,9 @@
 .text-gradient {
   background-clip: text;
   color: transparent;
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #a855f7 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgba(168, 85, 247, 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #db2777 var(--tw-gradient-to-position);
 }
 
-.btn-gradient {
+.bg-gradient {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
   --tw-gradient-from: #a855f7 var(--tw-gradient-from-position);
   --tw-gradient-to: rgba(168, 85, 247, 0) var(--tw-gradient-to-position);
@@ -22,17 +17,19 @@
 
 @layer base {
   .dark {
-    --dark-color-900: hsl(221, 39%, 11%);
-    --dark-color-700: hsl(215, 28%, 17%);
+    --dark-color-900: hsl(0, 0%, 0%);
+    --dark-color-700: hsl(215, 0%, 17%);
     --light-color-600: hsl(0, 0%, 20%);
-    --light-color-400: hsl(183, 26%, 57%);
+    --light-color-400: hsl(183, 26%, 25%);
     --light-color-100: hsl(0, 0%, 90%);
+    --yellow-color-300: hsl(50, 98%, 64%);
 
-    --dark-shade-900: 221, 0%, 11%;
-    --dark-shade-700: 215, 0%, 17%;
+    --dark-shade-900: 0, 0%, 8%;
+    --dark-shade-700: 215, 0%, 12%;
     --light-shade-600: 0 0% 20%;
-    --light-shade-400: 183, 26%, 35%;
+    --light-shade-400: 183, 26%, 25%;
     --light-shade-100: 0, 0%, 90%;
+    --yellow-shade-300: 50, 98%, 64%;
 
 
     --background: var(--dark-shade-900);
@@ -42,20 +39,20 @@
     --popover: var(--dark-shade-900);
     --popover-foreground: var(--light-shade-100);
     --primary: var(--dark-shade-700);
-    --primary-foreground: 0 85.7% 97.3%;
+    --primary-foreground: var(--yellow-shade-300);
     --secondary: var(--light-shade-400);
     --secondary-foreground: var(--light-shade-100);
     --muted: var(--light-shade-600);
-    --muted-foreground: 0 0% 63.9%;
+    --muted-foreground: var(--yellow-shade-300);
     --accent: var(--light-shade-600);
     --accent-foreground: var(--light-shade-100);
-    --destructive: 0 62.8% 30.6%;
+    --destructive: var(--yellow-shade-300);
     --destructive-foreground: var(--light-shade-100);
     --border: var(--light-shade-600);
     --input: var(--light-shade-600);
     --ring: var(--dark-shade-700);
 
-    --radius: 5rem;
+    --radius: 1.2rem;
   }
 }
 
