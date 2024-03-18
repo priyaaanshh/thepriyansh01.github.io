@@ -5,16 +5,16 @@ import { HardDriveDownload, Mail, Mouse, Send } from 'lucide-react';
 const Dashboard = () => {
     return (
         <section className='flex flex-col justify-center items-center gap-5 w-full h-screen max-w-[1080px] px-4 py-2'>
-            <div className='text-2xl md:text-4xl'>
+            <div className='text-xl md:text-4xl'>
                 Hii, I am
             </div>
-            <div className='text-6xl md:text-9xl text-center font-semibold bg-gradient text-gradient my-5'>
+            <div className='text-4xl md:text-8xl text-center font-semibold bg-gradient text-gradient sm:my-5'>
                 Priyansh Sahu
             </div>
-            <div className='text-md md:text-xl text-center'>
+            <div className='text-sm md:text-xl text-center'>
                 Welcome to my portfolio! I&apos;m a dedicated full-stack developer with a strong expertise in web development. I specialize in building dynamic and intuitive web applications.
             </div>
-            <div className="flex flex-wrap justify-center items-center gap-8 px-4 my-3">
+            <div className="flex flex-wrap justify-center items-center gap-8 px-4 my-3 scale-75 sm:scale-100">
                 <a href="https://github.com/thepriyansh01" target="_blank" className='hover:rotate-[360deg] duration-700 hover:text-destructive'>
                     <GitHubLogoIcon height='40' width="40" />
                 </a>
@@ -35,7 +35,7 @@ const Dashboard = () => {
                 </a>
 
             </div>
-            <div className="flex flex-wrap justify-center items-center w-full px-4 gap-5 md:gap-10 font-semibold text-2xl">
+            <div className="flex flex-wrap justify-center items-center w-full px-4 gap-5 md:gap-10 font-semibold sm:text-2xl">
                 <a href='mailto:priyansh.sahu.cer21@iitbhu.ac.in' target="_blank" className='flex justify-center items-center gap-3 w-full sm:w-max px-8 py-2 rounded-[var(--radius)] bg-gradient border-2 shadow-lg shadow-black/25 hover:scale-110 duration-300 hover:-rotate-1'>
                     <span>Contact Me</span>
                     <Send size={25} />
