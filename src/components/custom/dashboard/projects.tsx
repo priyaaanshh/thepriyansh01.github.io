@@ -1,16 +1,17 @@
-// Projects.tsx
 import React from 'react';
 import ProjectCard from './card/projectCard';
-import Peace from '../../../assets/images/Peace.png'
-import ShopTalk from '../../../assets/images/ShopTalk.png'
-import Sharepost from '../../../assets/images/Sharepost.png'
-import HotelBook from '../../../assets/images/HotelBook.png'
-import TaskManager from '../../../assets/images/TaskManager.png'
-import IMDB from '../../../assets/images/IMDB.png'
-import Zomato from '../../../assets/images/Zomato.png'
-import Heading from '../heading/heading';
+import Peace from '@/assets/images/Peace.png'
+import ShopTalk from '@/assets/images/ShopTalk.png'
+import Sharepost from '@/assets/images/Sharepost.png'
+import HotelBook from '@/assets/images/HotelBook.png'
+import TaskManager from '@/assets/images/TaskManager.png'
+import IMDB from '@/assets/images/IMDB.png'
+import Zomato from '@/assets/images/Zomato.png'
 
-const Projects = () => {
+interface Props {
+    projectsToShow: number | undefined
+}
+const Projects: React.FC<Props> = ({ projectsToShow }) => {
     const projects = [
         {
             title: "ShopTalk",
@@ -134,9 +135,8 @@ const Projects = () => {
 
     return (
         <section className='flex flex-col justify-center items-center w-full min-h-screen max-w-[850px] my-5'>
-            <Heading >{'Projects'}</Heading>
             <div className='flex flex-wrap justify-center items-center text-lg text-center w-full gap-5'>
-                {projects.map((project, index) => (
+                {projects.slice(0, projectsToShow).map((project, index) => (
                     <ProjectCard
                         key={index}
                         project={project}

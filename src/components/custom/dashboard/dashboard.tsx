@@ -15,17 +15,17 @@ const Dashboard = () => {
                 Welcome to my portfolio! I&apos;m a dedicated full-stack developer with a strong expertise in web development. I specialize in building dynamic and intuitive web applications.
             </div>
             <div className="flex flex-wrap justify-center items-center gap-8 px-4 my-3 scale-75 sm:scale-100">
-                <a href="https://github.com/thepriyansh01" target="_blank" className='hover:rotate-[360deg] duration-700 hover:text-destructive'>
-                    <GitHubLogoIcon height='40' width="40" />
-                </a>
-                <a href="https://www.linkedin.com/in/priyansh-sahu-ab9380202/" target="_blank" className='hover:rotate-[360deg] duration-700 hover:text-destructive'>
-                    <LinkedInLogoIcon height='40' width="40" />
-                </a>
                 <a href="https://twitter.com/_thepriyansh01" target="_blank" className='hover:rotate-[360deg] duration-700 hover:text-destructive'>
                     <TwitterLogoIcon height='40' width="40" />
                 </a>
                 <a href="https://www.instagram.com/_thepriyansh/" target="_blank" className='hover:rotate-[360deg] duration-700 hover:text-destructive'>
                     <InstagramLogoIcon height='40' width="40" />
+                </a>
+                <a href="https://github.com/thepriyansh01" target="_blank" className='hover:rotate-[360deg] duration-700 hover:text-destructive'>
+                    <GitHubLogoIcon height='40' width="40" />
+                </a>
+                <a href="https://www.linkedin.com/in/priyansh-sahu-ab9380202/" target="_blank" className='hover:rotate-[360deg] duration-700 hover:text-destructive'>
+                    <LinkedInLogoIcon height='40' width="40" />
                 </a>
                 <a href="https://discord.gg/SRZYjv3Q" target="_blank" className='hover:rotate-[360deg] duration-700 hover:text-destructive'>
                     <DiscordLogoIcon height='40' width="40" />

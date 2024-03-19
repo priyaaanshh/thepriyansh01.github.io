@@ -29,7 +29,6 @@ const Skills = () => {
 
     return (
         <section className='flex flex-col justify-center items-center w-full max-w-[850px] my-16'>
-            <Heading >{"Skills"}</Heading>
             <div className='flex flex-wrap justify-center items-center text-center w-full gap-5'>
                 {skills.map((skill, index) => (
                     <SkillCard key={index}>{skill}</SkillCard>
