@@ -1,3 +1,5 @@
+import { GitHubLogoIcon } from '@radix-ui/react-icons';
+import { Link } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 
@@ -26,13 +28,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 <div className="flex flex-wrap justify-start items-start gap-2">
                     {topics.map((topic, index) => <div key={index} className='flex justify-center items-center bg-secondary rounded-[var(--radius)] px-2 py-1 cursor-pointer font-semibold hover:bg-destructive hover:text-primary hover:scale-105 text-xs sm:text-sm duration-300'>{topic}</div>)}
                 </div>
-                <div className="flex justify-normal items-center gap-5 text-md sm:text-xl">
-                    {deployLink && <a href={deployLink} target='blank' className='flex justify-center items-center px-4 py-1 text-primary bg-secondary-foreground rounded-[var(--radius)]  hover:scale-110 duration-300'>Live</a>}
-                    {codeLink && <a href={codeLink} target='blank' className='flex justify-center items-center px-4 py-1 bg-secondary rounded-[var(--radius)]  hover:scale-110 duration-300'>Github</a>}
+                <div className="flex justify-normal items-center gap-5 text-md sm:text-xl font-semibold">
+                    {deployLink && <a href={deployLink} target='blank' className='flex justify-center items-center gap-1 px-4 py-1 text-primary bg-secondary-foreground rounded-[var(--radius)]  hover:scale-110 duration-300'>
+                        <span>Live</span>
+                        <Link height="15" />
+                    </a>}
+                    {codeLink && <a href={codeLink} target='blank' className='flex justify-center items-center gap-2 px-4 py-1 bg-secondary rounded-[var(--radius)]  hover:scale-110 duration-300'>
+                        <span>Github</span>
+                        <GitHubLogoIcon height="20" width="20" />
+                    </a>}
                 </div>
             </div>
             <div>
-                {image && <Image priority src={image} alt='' className='sm:h-44 w-full object-cover rounded-[10px] sm:rounded-[var(--radius)] overflow-hidden shadow-lg shadow-black/50 hover:scale-105 sm:hover:scale-125 sm:hover:-rotate-6 duration-300' />}
+                {image && <Image loading='lazy' src={image} alt='' className='sm:h-44 w-full object-cover rounded-[10px] sm:rounded-[var(--radius)] overflow-hidden shadow-lg shadow-black/50 hover:scale-105 sm:hover:scale-125 sm:hover:-rotate-6 duration-300' />}
             </div>
         </div>
     );

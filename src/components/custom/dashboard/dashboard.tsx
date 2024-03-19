@@ -4,7 +4,7 @@ import { HardDriveDownload, Mail, Mouse, Send } from 'lucide-react';
 
 const Dashboard = () => {
     return (
-        <section className='flex flex-col justify-center items-center gap-5 w-full h-screen max-w-[1080px] px-4 py-2'>
+        <section className='flex flex-col justify-center items-center gap-5 w-full h-[100lvh] max-w-[1080px] px-4 py-2'>
             <div className='text-xl md:text-4xl'>
                 Hii, I am
             </div>
@@ -45,7 +45,7 @@ const Dashboard = () => {
                     <HardDriveDownload size={25} />
                 </a>
             </div>
-            <div className='flex justify-center  gap-3 absolute bottom-10 animate-bounce'>
+            <div className='flex justify-center  gap-3 absolute bottom-1 sm:bottom-10 animate-bounce'>
                 <Mouse color='rgb(168, 85, 247)' />
                 <span className='text-xl '>Scroll Down</span>
             </div>
