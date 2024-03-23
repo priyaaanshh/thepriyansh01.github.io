@@ -47,7 +47,7 @@ const Header = () => {
                     </div>
                 </Link>
             </div>
-            <div className='flex justify-center items-center my-5 bg-gradient text-secondary-foreground backdrop-blur rounded-[var(--radius)] px-4 py-2 sm:text-3xl cursor-pointer select-none'>Website in devlopment phase</div>
+            {/* <div className='flex justify-center items-center my-5 bg-gradient text-secondary-foreground backdrop-blur rounded-[var(--radius)] px-4 py-2 sm:text-3xl cursor-pointer select-none'>Website in devlopment phase</div> */}
         </div>
     )
 }

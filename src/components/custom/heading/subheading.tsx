@@ -5,7 +5,7 @@ interface Props {
 }
 const SubHeading: React.FC<Props> = ({ children }) => {
     return (
-        <span className='text-md sm:text-4xl font-semibold mb-2'>{children}</span>
+        <span className='text-md text-center sm:text-3xl font-semibold mb-2'>{children}</span>
     )
 }
 
