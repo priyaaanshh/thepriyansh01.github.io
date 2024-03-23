@@ -47,7 +47,7 @@ const Contact = () => {
 
 
   return (
-    <div className='flex flex-col items-center h-screen w-full mb-16 pt-[100px] px-4'>
+    <div className='flex flex-col items-center  w-full  pt-[100px] px-4'>
       <MainHeading>Contact Me</MainHeading>
       <SubHeading>Want to connect? My inbox is always open!</SubHeading>
       <form action={action} className="flex flex-col justify-center items-center gap-5 w-full max-w-[850px] my-4">

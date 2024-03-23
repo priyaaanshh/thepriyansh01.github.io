@@ -30,9 +30,7 @@ export default function RootLayout({
         >
           <Header />
           <div className="flex items-center justify-center w-full">
-            {/* <div className="h-full w-full"> */}
-              {children}
-            {/* </ div> */}
+            {children}
           </div>
           <Footer />
         </ThemeProvider>
