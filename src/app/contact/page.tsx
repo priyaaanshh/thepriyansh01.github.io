@@ -12,7 +12,7 @@ const Contact = () => {
     'use server';
 
     const emailOptions = {
-      to: 'priyansh.sahu.cer21@iitbhu.ac.in',
+      to: process.env.MyEmailId,
       subject: formData.get("Subject") as string,
       message: `
       Name : ${formData.get("Name")}

@@ -7,8 +7,8 @@ interface EmailOptions {
 }
 
 async function sendEmail(options: EmailOptions): Promise<void> {
-    const mailId = "me@gmail.com"
-    const mailPassword = "password"
+    const mailId = process.env.MailId
+    const mailPassword = process.env.MailPassword
     try {
         // Create a transporter object using SMTP transport
         const transporter = nodemailer.createTransport({
@@ -21,7 +21,7 @@ async function sendEmail(options: EmailOptions): Promise<void> {
 
         // Define email message
         const mailOptions = {
-            from: mailId,
+            from: process.env.MailId,
             to: options.to,
             subject: options.subject,
             text: options.message
