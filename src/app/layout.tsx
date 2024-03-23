@@ -29,10 +29,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <div className="flex items-center justify-center w-full min-h-screen">
-            <div className="h-full w-full">
+          <div className="flex items-center justify-center w-full">
+            {/* <div className="h-full w-full"> */}
               {children}
-            </ div>
+            {/* </ div> */}
           </div>
           <Footer />
         </ThemeProvider>
