@@ -12,7 +12,7 @@ const Contact = () => {
     'use server';
 
     const emailOptions = {
-      to: process.env.MyEmailId,
+      to: process.env.MyEmailId as string,
       subject: formData.get("Subject") as string,
       message: `
       Name : ${formData.get("Name")}
