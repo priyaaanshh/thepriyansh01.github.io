@@ -22,7 +22,7 @@ const Projects: React.FC<Props> = ({ projectsToShow }) => {
                 "MongoDb",
                 "Huggingface models"],
             deployLink: "https://build-for-bharat-frontend-v6qd.vercel.app/",
-            codeLink: "https://github.com/thepriyansh01/BuildForBharat-Frontend",
+            codeLink: "https://github.com/priyaaanshh/BuildForBharat-Frontend",
             image: ShopTalk
         },
         {
@@ -36,7 +36,7 @@ const Projects: React.FC<Props> = ({ projectsToShow }) => {
                 "Authentication",
             ],
             deployLink: "https://peace-client.vercel.app/",
-            codeLink: "https://github.com/thepriyansh01/Peace",
+            codeLink: "https://github.com/priyaaanshh/Peace",
             image: Peace
         },
         {
@@ -51,7 +51,7 @@ const Projects: React.FC<Props> = ({ projectsToShow }) => {
                 "Jsonwebtoken"
             ],
             deployLink: "https://hotel-book-com-client.vercel.app/",
-            codeLink: "https://github.com/thepriyansh01/HotelBook.com",
+            codeLink: "https://github.com/priyaaanshh/HotelBook.com",
             image: HotelBook
         },
         {
@@ -64,7 +64,7 @@ const Projects: React.FC<Props> = ({ projectsToShow }) => {
                 "MongoDb",
                 "Infinite scroll"],
             deployLink: "https://sharepost-phi.vercel.app/",
-            codeLink: "https://github.com/thepriyansh01/sharepost",
+            codeLink: "https://github.com/priyaaanshh/sharepost",
             image: Sharepost
         },
         {
@@ -77,7 +77,7 @@ const Projects: React.FC<Props> = ({ projectsToShow }) => {
                 "Css",
             ],
             deployLink: "https://imdb-clone-tan.vercel.app/",
-            codeLink: "https://github.com/thepriyansh01/Movie-Web-App",
+            codeLink: "https://github.com/priyaaanshh/Movie-Web-App",
             image: IMDB
         },
         {
@@ -90,7 +90,7 @@ const Projects: React.FC<Props> = ({ projectsToShow }) => {
                 "Css",
             ],
             deployLink: "https://zomato-clone-theta-bay.vercel.app/",
-            codeLink: "https://github.com/thepriyansh01/Zomato-Clone",
+            codeLink: "https://github.com/priyaaanshh/Zomato-Clone",
             image: Zomato
         },
         {
@@ -103,7 +103,7 @@ const Projects: React.FC<Props> = ({ projectsToShow }) => {
                 "theme switcher",
             ],
             deployLink: null,
-            codeLink: "https://github.com/thepriyansh01/Task-Manager-Flutter",
+            codeLink: "https://github.com/priyaaanshh/Task-Manager-Flutter",
             image: TaskManager
         },
         {
@@ -115,7 +115,7 @@ const Projects: React.FC<Props> = ({ projectsToShow }) => {
                 "BMI calculator",
             ],
             deployLink: null,
-            codeLink: "https://github.com/thepriyansh01/Calculator",
+            codeLink: "https://github.com/priyaaanshh/Calculator",
             image: null
         },
         {
@@ -128,7 +128,7 @@ const Projects: React.FC<Props> = ({ projectsToShow }) => {
                 "transformers",
             ],
             deployLink: null,
-            codeLink: "https://github.com/thepriyansh01/Sentiment-Analysis-on-Blogs",
+            codeLink: "https://github.com/priyaaanshh/Sentiment-Analysis-on-Blogs",
             image: null
         },
     ];
