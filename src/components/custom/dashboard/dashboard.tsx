@@ -1,5 +1,6 @@
 import { DiscordLogoIcon, GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import { HardDriveDownload, Mail, Mouse, Send } from 'lucide-react';
+import Link from 'next/link';
 
 
 const Dashboard = () => {
@@ -36,10 +37,10 @@ const Dashboard = () => {
 
             </div>
             <div className="flex flex-wrap justify-center items-center w-full px-4 gap-5 md:gap-10 font-semibold sm:text-2xl">
-                <a href='mailto:priyansh.sahu.cer21@iitbhu.ac.in' target="_blank" className='flex justify-center items-center gap-3 w-full sm:w-max px-8 py-2 rounded-[var(--radius)] bg-gradient border-2 shadow-lg shadow-black/25 hover:scale-110 duration-300 hover:-rotate-1'>
+                <Link href='/contact' className='flex justify-center items-center gap-3 w-full sm:w-max px-8 py-2 rounded-[var(--radius)] bg-gradient border-2 shadow-lg shadow-black/25 hover:scale-110 duration-300 hover:-rotate-1'>
                     <span>Contact Me</span>
                     <Send size={25} />
-                </a>
+                </Link>
                 <a href='https://drive.google.com/file/d/1LmbYn9rovs5e7BffkpEhK_jnAZPV82d7/view' target="_blank" className='flex justify-center items-center gap-3 w-full sm:w-max px-8 py-2 rounded-[var(--radius)] bg-secondary border-2 shadow-lg shadow-black/25 hover:scale-110 duration-300 hover:rotate-1'>
                     <span>Resume</span>
                     <HardDriveDownload size={25} />
