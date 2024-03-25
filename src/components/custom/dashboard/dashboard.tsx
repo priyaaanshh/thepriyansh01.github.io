@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Dashboard = () => {
     return (
-        <section className='flex flex-col justify-center items-center gap-5 w-full h-[100lvh] max-w-[1080px] px-4 py-2'>
+        <section className='relative flex flex-col justify-center items-center gap-5 w-full h-screen max-w-[1080px] px-4 py-2'>
             <div className='text-xl md:text-4xl'>
                 Hii, I am
             </div>

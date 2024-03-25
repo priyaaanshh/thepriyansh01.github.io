@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={`${nunito.className} select-none`}>
+      <body className={`${nunito.className} select-none no-scrollbar`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -29,10 +29,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <div className="flex items-center justify-center w-full">
             {children}
-          </div>
-          <Footer />
+          {/* <Footer /> */}
         </ThemeProvider>
       </body>
     </html>

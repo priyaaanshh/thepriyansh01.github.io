@@ -4,9 +4,11 @@ import React from 'react'
 
 const Blogs = () => {
     return (
-        <div className='flex flex-col justify-center items-center w-full min-h-screen mt-20 px-2'>
-            <MainHeading>My Blogs</MainHeading>
-            <SubHeading>Here are some of my blogs</SubHeading>
+        <div className='grid place-items-center w-full h-screen overflow-y-scroll no-scrollbar'>
+            <div className="flex flex-col justify-center items-center">
+                <MainHeading>My Blogs</MainHeading>
+                <SubHeading>Here are some of my blogs</SubHeading>
+            </div>
         </div>
     )
 }

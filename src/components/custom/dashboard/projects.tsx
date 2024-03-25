@@ -134,15 +134,13 @@ const Projects: React.FC<Props> = ({ projectsToShow }) => {
     ];
 
     return (
-        <section className='flex flex-col justify-center items-center w-full min-h-screen max-w-[850px] my-5'>
-            <div className='flex flex-wrap justify-center items-center text-lg text-center w-full gap-5'>
-                {projects.slice(0, projectsToShow).map((project, index) => (
-                    <ProjectCard
-                        key={index}
-                        project={project}
-                    />
-                ))}
-            </div>
+        <section className='flex flex-wrap justify-center items-center text-lg text-center w-full gap-5'>
+            {projects.slice(0, projectsToShow).map((project, index) => (
+                <ProjectCard
+                    key={index}
+                    project={project}
+                />
+            ))}
         </section>
     );
 };

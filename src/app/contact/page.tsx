@@ -47,13 +47,15 @@ const Contact = () => {
 
 
   return (
-    <div className='flex flex-col items-center min-h-screen w-full pt-[100px] px-4'>
-      <MainHeading>Contact Me</MainHeading>
-      <SubHeading>Want to connect? My inbox is always open!</SubHeading>
-      <form action={action} className="flex flex-col justify-center items-center gap-5 w-full max-w-[850px] my-4">
-        <ContactForm />
-      </form>
-    </div>
+    <div className="grid place-items-center w-full h-screen overflow-x-hidden overflow-y-scroll no-scrollbar" >
+      <div className='flex flex-col justify-center items-center mt-20 w-full max-w-[850px] px-4' >
+        <MainHeading>Contact Me</MainHeading>
+        <SubHeading>Want to connect? My inbox is always open!</SubHeading>
+        <form action={action} className="flex flex-col justify-center items-center gap-5 w-full">
+          <ContactForm />
+        </form>
+      </div >
+    </div >
   )
 }
 
