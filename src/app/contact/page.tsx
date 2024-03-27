@@ -1,7 +1,7 @@
 'use client';
 import MainHeading from '@/components/custom/heading/mainheading'
 import SubHeading from '@/components/custom/heading/subheading'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import InputBox from './inputBox';
 import { Send } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
@@ -16,15 +16,12 @@ const Contact = () => {
   }
   const [data, setData] = useState(initialState);
 
-
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     setData((prev: typeof data) => ({ ...prev, [name]: value }));
   }
-
   const action = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
-
     try {
       fetch('/api/contact', {
         method: "POST",
@@ -36,12 +33,11 @@ const Contact = () => {
         .then((data) => {
           setData(initialState)
           toast({
-            description: "Your message has been sent.",
+            description: data.message,
           })
         })
     } catch (error) {
       console.log(error)
-      throw error
     }
   }
   return (

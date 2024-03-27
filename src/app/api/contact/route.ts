@@ -36,14 +36,18 @@ const prepareAndSendMail = async (data: { Name: string, Email: string, Subject: 
         subject: data.Subject,
         html: emailData,
     };
-
-    await sendEmail(emailOptions);
+    try {
+        await sendEmail(emailOptions);
+        return "Your message has been sent.";
+    } catch (error) {
+        return "Message failed";
+    }
 }
 export async function POST(request: NextRequest) {
     const data = await request.json();
-    console.log(data);
-    prepareAndSendMail(data);
-    return NextResponse.json({ message: "Message Sent" }, { status: 200 });
+    const message = await prepareAndSendMail(data);
+    console.log("Message : ",message)
+    return NextResponse.json({ message: message }, { status: 200 });
 }
 
 
