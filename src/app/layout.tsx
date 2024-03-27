@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider"
+import { Toaster } from "@/components/ui/toaster"
 
 import Header from "@/components/custom/navBars/header";
 import Footer from "@/components/custom/navBars/footer";
@@ -29,7 +30,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-            {children}
+          {children}
+          <Toaster />
           {/* <Footer /> */}
         </ThemeProvider>
       </body>

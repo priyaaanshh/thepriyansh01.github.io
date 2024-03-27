@@ -33,7 +33,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "dist/types/**/*.ts",
-    "src/app/particlejs/component.tsx"
+    "src/app/particlejs/component.tsx",
+    "src/app/dev/page.tsx"
   ],
   "exclude": [
     "node_modules"

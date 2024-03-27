@@ -8,16 +8,14 @@ interface EmailOptions {
 }
 
 async function sendEmail(options: EmailOptions): Promise<void> {
-    const mailId = process.env.MailId
-    const mailPassword = process.env.MailPassword
     try {
         // Create a transporter object using SMTP transport
         const transporter = nodemailer.createTransport({
             service: 'Gmail',
             host: "smtp.gmail.com",
             auth: {
-                user: mailId,
-                pass: mailPassword
+                user: process.env.MailId,
+                pass: process.env.MailPassword
             }
         });
 

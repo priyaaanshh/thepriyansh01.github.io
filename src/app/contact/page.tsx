@@ -1,58 +1,67 @@
+'use client';
 import MainHeading from '@/components/custom/heading/mainheading'
 import SubHeading from '@/components/custom/heading/subheading'
-import React from 'react'
-import sendEmail from '@/utils/sendEmail';
-import ContactForm from './form';
+import React, { useState } from 'react'
+import InputBox from './inputBox';
+import { Send } from 'lucide-react';
+import { useToast } from '@/components/ui/use-toast';
 
 const Contact = () => {
+  const { toast } = useToast()
+  const initialState = {
+    Name: "",
+    Email: "",
+    Subject: "",
+    Message: "",
+  }
+  const [data, setData] = useState(initialState);
 
-  const action = async (formData: FormData) => {
-    'use server';
-    const emailData = `
-                      <html>
-                        <head>
-                          <style>
-                          .heading {
-                              margin-top: 8px;
-                              margin-bottom: 8px;
-                          }
-                          .message {
-                              white-space: pre-line;
-                              max-width: 1080px;
-                          }
-                          </style>
-                        </head>
-                        <body>
-                          <div class="heading">
-                            <h2>From : ${formData.get("Name")}</h2>
-                          </div>
-                          <div class="message">
-                            <p>${formData.get("Message")}</p>
-                          </div>
-                          <div class="heading">
-                            <h3>Mail Id : ${formData.get("Email")}</h3>
-                          </div>
-                        </body>
-                      </html>
-                    `;
 
-    const emailOptions = {
-      name: formData.get("Name") as string,
-      to: process.env.MyEmailId as string,
-      subject: formData.get("Subject") as string,
-      html: emailData,
-    };
-    await sendEmail(emailOptions);
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setData((prev: typeof data) => ({ ...prev, [name]: value }));
   }
 
+  const action = async (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
 
+    try {
+      fetch('/api/contact', {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      }).then((res) => res.json())
+        .then((data) => {
+          setData(initialState)
+          toast({
+            description: "Your message has been sent.",
+          })
+        })
+    } catch (error) {
+      console.log(error)
+      throw error
+    }
+  }
   return (
     <div className="grid place-items-center w-full h-screen overflow-x-hidden overflow-y-scroll no-scrollbar" >
       <div className='flex flex-col justify-center items-center mt-20 w-full max-w-[850px] px-4' >
         <MainHeading>Contact Me</MainHeading>
         <SubHeading>Want to connect? My inbox is always open!</SubHeading>
-        <form action={action} className="flex flex-col justify-center items-center gap-5 w-full">
-          <ContactForm />
+        <form onSubmit={action} className="flex flex-col justify-center items-center gap-5 w-full">
+          <div className="flex flex-col justify-center items-center gap-5 w-full max-w-[850px] my-4">
+            <InputBox inputname='Name' value={data.Name} onChange={handleChange} istextbox={false} />
+            <InputBox inputname='Email' value={data.Email} onChange={handleChange} istextbox={false} />
+            <InputBox inputname='Subject' value={data.Subject} onChange={handleChange} istextbox={false} />
+            <InputBox inputname='Message' value={data.Message} onChange={handleChange} istextbox={true} />
+            <div className="flex items-center justify-end w-full">
+              <button type='submit' className='flex justify-center items-center gap-3 w-full sm:w-max px-8 py-2 font-bold rounded-[var(--radius)] bg-gradient border-2 shadow-lg shadow-black/25 hover:scale-110 duration-300 hover:-rotate-1'>
+                <span>Send</span>
+                <Send size={25} />
+              </button>
+            </div>
+          </div>
         </form>
       </div >
     </div >
