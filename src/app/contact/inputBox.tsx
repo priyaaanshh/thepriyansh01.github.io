@@ -14,8 +14,8 @@ const InputBox: React.FC<props> = ({ inputname, istextbox, value, onChange }) =>
                 {inputname}
             </span>
             {istextbox === false ?
-                <input type="text" name={inputname} value={value} onChange={(e) => onChange(e)} className='border-none outline-none bg-transparent w-full' /> :
-                <textarea name={inputname} value={value} onChange={(e) => onChange(e)} className='h-64 border-none outline-none bg-transparent w-full' />
+                <input type="text" name={inputname} value={value} onChange={(e) => onChange(e)} className='border-none outline-none bg-transparent w-full'required /> :
+                <textarea name={inputname} value={value} onChange={(e) => onChange(e)} className='h-64 border-none outline-none bg-transparent w-full' required/>
             }
         </Label>
     )
