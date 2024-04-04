@@ -4,7 +4,6 @@ import Projects from "@/components/custom/dashboard/projects";
 import Skills from "@/components/custom/dashboard/skills";
 import Heading from "@/components/custom/heading/heading";
 import ParticleBg from "@/components/particles/particleBg";
-import Loading from "./loading";
 
 const Home = () => {
   
