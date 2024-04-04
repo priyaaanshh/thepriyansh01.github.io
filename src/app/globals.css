@@ -21,7 +21,7 @@
     --dark-color-700: hsl(219, 29%, 19%);
 
     --light-color-600: hsl(163, 100%, 18%);
-    --light-color-400: hsl(172, 100%, 25%);
+    --light-color-400: rgb(172, 100%, 25%);
 
     --light-color-100: hsl(0, 0%, 95%);
     --yellow-color-300: hsl(50, 98%, 64%);
