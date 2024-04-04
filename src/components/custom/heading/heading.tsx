@@ -5,7 +5,7 @@ interface Props {
 }
 const Heading: React.FC<Props> = ({ children }) => {
     return (
-        <span className='bg-gradient text-gradient text-3xl sm:text-5xl font-bold my-7'>{children}</span>
+        <span className='relative bg-gradient text-gradient text-3xl sm:text-5xl font-bold my-7'>{children}</span>
 
     )
 }

@@ -134,7 +134,7 @@ const Projects: React.FC<Props> = ({ projectsToShow }) => {
     ];
 
     return (
-        <section className='flex flex-wrap justify-center items-center text-lg text-center w-full gap-5'>
+        <section className='relative flex flex-wrap justify-center items-center text-lg text-center w-full gap-5'>
             {projects.slice(0, projectsToShow).map((project, index) => (
                 <ProjectCard
                     key={index}

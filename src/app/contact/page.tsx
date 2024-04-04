@@ -42,8 +42,7 @@ const Contact = () => {
     }
   }
   return (
-    <div className="grid place-items-center w-full h-screen overflow-x-hidden overflow-y-scroll no-scrollbar" >
-      <ParticleBg/>
+    <div className="relative grid place-items-center w-full h-screen overflow-x-hidden overflow-y-scroll no-scrollbar" >
       <div className='flex flex-col justify-center items-center mt-20 w-full max-w-[850px] px-4' >
         <MainHeading>Contact Me</MainHeading>
         <SubHeading>Want to connect? My inbox is always open!</SubHeading>

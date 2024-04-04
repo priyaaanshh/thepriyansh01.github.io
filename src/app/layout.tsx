@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster"
 
 import Header from "@/components/custom/navBars/header";
 import Footer from "@/components/custom/navBars/footer";
+import ParticleBg from "@/components/particles/particleBg";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head />
       <body className={`${nunito.className} select-none no-scrollbar`}>
+      <ParticleBg/>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
