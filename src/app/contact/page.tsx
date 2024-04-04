@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import InputBox from './inputBox';
 import { Send } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
+import ParticleBg from '@/components/particles/particleBg';
 
 const Contact = () => {
   const { toast } = useToast()
@@ -42,6 +43,7 @@ const Contact = () => {
   }
   return (
     <div className="grid place-items-center w-full h-screen overflow-x-hidden overflow-y-scroll no-scrollbar" >
+      <ParticleBg/>
       <div className='flex flex-col justify-center items-center mt-20 w-full max-w-[850px] px-4' >
         <MainHeading>Contact Me</MainHeading>
         <SubHeading>Want to connect? My inbox is always open!</SubHeading>
