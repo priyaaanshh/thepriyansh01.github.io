@@ -1,17 +1,14 @@
-import MainHeading from '@/components/custom/heading/mainheading'
-import SubHeading from '@/components/custom/heading/subheading'
-import ParticleBg from '@/components/particles/particleBg'
-import React from 'react'
-
+import TimeLine from "@/components/custom/timeline/timeline";
+import React from "react";
+import timeLineData from "./timelineData";
 const Experience = () => {
   return (
-    <div className='relative grid place-items-center w-full h-screen overflow-y-scroll no-scrollbar'>
-      <div className="flex flex-col justify-center items-center">
-        <MainHeading>Experiance</MainHeading>
-        <SubHeading>Want to connect? My inbox is always open!</SubHeading>     
+    <div className="flex flex-col justify-start items-start lg:items-center h-screen w-full overflow-x-hidden">
+      <div className="my-28 px-6">
+        <TimeLine events={timeLineData} />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

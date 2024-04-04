@@ -1,0 +1,14 @@
+.align-card-left {
+  right: 48px;
+}
+.align-card-right {
+  left: 48px;
+}
+@media screen and (max-width: 1024px) {
+  .align-card-left {
+    left: 48px;
+  }
+  .align-card-right {
+    left: 48px;
+  }
+}
