@@ -51,7 +51,7 @@ const particleConfig = {
       density: {
         enable: true,
       },
-      value: 300,
+      value: 100,
     },
     opacity: {
       value: 0.2,
