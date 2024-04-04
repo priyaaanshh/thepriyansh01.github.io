@@ -10,7 +10,7 @@ const TypingAnimation = () => {
           1000,
           "Web Developer",
           1000,
-          "Softwere Engineer",
+          "Software Engineer",
           1000,
         ]}
         repeat={Infinity}
