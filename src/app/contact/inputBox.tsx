@@ -9,7 +9,7 @@ interface props {
 }
 const InputBox: React.FC<props> = ({ inputname, istextbox, value, onChange }) => {
     return (
-        <Label className="flex flex-col justify-normal items-start gap-3 bg-primary w-full rounded-[--radius] border-2 p-4">
+        <Label className="flex flex-col justify-normal items-start gap-3 bg-[#4e535324] backdrop-blur w-full rounded-[--radius] border-2 p-4">
             <span className=''>
                 {inputname}
             </span>

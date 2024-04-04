@@ -17,20 +17,20 @@
 
 @layer base {
   .dark {
-    --dark-color-900: hsl(242, 48%, 16%);
-    --dark-color-700: hsl(243, 55%, 24%);
+    --dark-color-900: hsl(0, 0%, 6%);
+    --dark-color-700: hsl(219, 29%, 19%);
 
-    --light-color-600: hsl(242, 27%, 21%);
-    --light-color-400: hsl(242, 30%, 67%);
+    --light-color-600: hsl(163, 100%, 18%);
+    --light-color-400: hsl(172, 100%, 25%);
 
-    --light-color-100: hsl(0, 0%, 90%);
+    --light-color-100: hsl(0, 0%, 95%);
     --yellow-color-300: hsl(50, 98%, 64%);
 
-    --dark-shade-900: 242, 48%, 16%;
-    --dark-shade-700: 243, 55%, 24%;
-    --light-shade-600: 242, 27%, 21%;
-    --light-shade-400: 243, 38%, 37%;
-    --light-shade-100: 0, 0%, 90%;
+    --dark-shade-900: 0, 0%, 6%;
+    --dark-shade-700: 219, 29%, 19%;
+    --light-shade-600: 163, 100%, 18%;
+    --light-shade-400: 172, 100%, 25%;
+    --light-shade-100: 0, 0%, 95%;
     --yellow-shade-300: 50, 98%, 64%;
 
 
