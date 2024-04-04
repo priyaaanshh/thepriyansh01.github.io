@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FolderCog, Home, Mail, User2Icon } from "lucide-react";
 
 const Header = () => {
   const pathname = usePathname();
@@ -13,14 +14,17 @@ const Header = () => {
   };
   return (
     <div className="z-50 flex flex-col justify-center items-center fixed top-0 w-full py-2">
-      <div className="mt-2 hidden w-max flex-wrap justify-center items-center space-x-3 rounded-[var(--radius)] shadow-lg shadow-black/30 bg-[#4e535324] border border-muted p-2 backdrop-blur md:flex">
+      <div className="mt-2 flex w-max flex-wrap justify-center items-center space-x-3 rounded-[var(--radius)] shadow-lg shadow-black/30 bg-[#4e535324] border border-muted p-2 backdrop-blur">
         <Link href="/" passHref>
           <div
             className={`flex justify-center items-center font-semibold md:px-4 md:text-lg px-4 py-1 ${isActive(
               "/"
             )}`}
           >
-            Home
+            <div className="md:hidden flex">
+              <Home />
+            </div>
+            <div className="hidden md:flex">Home</div>
           </div>
         </Link>
 
@@ -30,7 +34,10 @@ const Header = () => {
               "/projects"
             )}`}
           >
-            Projects
+            <div className="md:hidden flex">
+              <FolderCog />
+            </div>
+            <div className="hidden md:flex">Projects</div>
           </div>
         </Link>
 
@@ -40,7 +47,10 @@ const Header = () => {
               "/experience"
             )}`}
           >
-            Experience
+            <div className="md:hidden flex">
+              <User2Icon />
+            </div>
+            <div className="hidden md:flex">Experience</div>
           </div>
         </Link>
 
@@ -50,7 +60,10 @@ const Header = () => {
               "/contact"
             )}`}
           >
-            Contact Me
+            <div className="md:hidden flex">
+              <Mail />
+            </div>
+            <div className="hidden md:flex">Contact Me</div>
           </div>
         </Link>
       </div>

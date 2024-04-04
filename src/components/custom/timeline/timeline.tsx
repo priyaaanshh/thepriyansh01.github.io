@@ -24,10 +24,10 @@ const Card: React.FC<CardProps> = ({ event, left }) => {
   };
   return (
     <div className="flex justify-center flex-col px-4 py-2 rounded-lg border-2 border-muted backdrop-blur bg-white/10 cursor-pointer">
-      <div className={`mb-2 text-2xl font-semibold ${alignText()}`}>
+      <div className={`mb-2 text-lg md:text-2xl font-semibold ${alignText()}`}>
         {event.title}
       </div>
-      <div className={`whitespace-pre-line ${alignText()}`}>
+      <div className={`text-xs md:text-lg whitespace-pre-line ${alignText()}`}>
         {event.description}
       </div>
     </div>
