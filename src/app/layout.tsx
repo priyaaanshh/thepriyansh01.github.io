@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Priyansh Sahu",
   description: "Fullstack developer || Freelancer",
 };
-export const dynamic = "force-dynamic";
+// export const dynamic = "force-dynamic";
 
 export default function RootLayout({
   children,
