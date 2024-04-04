@@ -4,8 +4,10 @@ import Projects from "@/components/custom/dashboard/projects";
 import Skills from "@/components/custom/dashboard/skills";
 import Heading from "@/components/custom/heading/heading";
 import ParticleBg from "@/components/particles/particleBg";
+import Loading from "./loading";
 
 const Home = () => {
+  
   return (
     <div className="sm:snap-y snap-mandatory flex flex-col items-center justify-start h-screen w-full px-4 pb-3 overflow-y-scroll no-scrollbar">
       <div className="sm:snap-start shrink-0 min-h-screen w-full max-w-[1440px] flex flex-col justify-center items-center gap-5">
