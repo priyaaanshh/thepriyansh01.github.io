@@ -9,12 +9,12 @@ const Header = () => {
 
   const isActive = (path: string) => {
     return pathname === path
-      ? "bg-primary rounded-[var(--radius)] shadow-lg shadow-black/25"
+      ? "bg-primary rounded-lg shadow-lg shadow-black/25"
       : "hover:text-destructive duration-300";
   };
   return (
     <div className="z-50 flex flex-col justify-center items-center fixed top-0 w-full py-2">
-      <div className="mt-2 flex w-max flex-wrap justify-center items-center space-x-3 rounded-[var(--radius)] shadow-lg shadow-black/30 bg-[#4e535324] border border-muted p-2 backdrop-blur">
+      <div className="mt-2 flex w-max flex-wrap justify-center items-center space-x-3 rounded-lg shadow-lg shadow-black/30 bg-[#4e535324] border border-muted p-2 backdrop-blur">
         <Link href="/" passHref>
           <div
             className={`flex justify-center items-center font-semibold md:px-4 md:text-lg px-4 py-1 ${isActive(

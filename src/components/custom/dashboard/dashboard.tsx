@@ -17,7 +17,7 @@ const Dashboard = () => {
       <div className="flex justify-between items-center w-full">
         <div className="flex flex-col justify-center items-left gap-5 w-full max-w-[900px] h-screen px-4 py-2">
           <div className="text-xl md:text-4xl">Hii, I am</div>
-          <div className="text-4xl md:text-8xl font-semibold bg-gradient text-gradient">
+          <div className="text-4xl md:text-8xl font-semibold text-gradient bg-gradient ">
             <TypingAnimation />
           </div>
           <div className="text-sm md:text-xl">
@@ -72,7 +72,7 @@ const Dashboard = () => {
           <div className="flex flex-wrap justify-left items-center w-full  gap-5 md:gap-10 font-semibold sm:text-2xl">
             <Link
               href="/contact"
-              className="flex justify-center items-center gap-3 w-full sm:w-max px-8 py-2 rounded-[var(--radius)] bg-gradient border-2 shadow-lg shadow-black/25 hover:scale-110 duration-300 hover:-rotate-1"
+              className="flex justify-center items-center gap-3 w-full sm:w-max px-8 py-2 rounded-lg bg-gradient border-2 shadow-lg shadow-black/25 hover:scale-110 duration-300 hover:-rotate-1"
             >
               <span>Contact Me</span>
               <Send size={25} />
@@ -80,14 +80,14 @@ const Dashboard = () => {
             <a
               href="https://drive.google.com/file/d/1LmbYn9rovs5e7BffkpEhK_jnAZPV82d7/view"
               target="_blank"
-              className="flex justify-center items-center gap-3 w-full sm:w-max px-8 py-2 rounded-[var(--radius)] bg-secondary border-2 shadow-lg shadow-black/25 hover:scale-110 duration-300 hover:rotate-1"
+              className="flex justify-center items-center gap-3 w-full sm:w-max px-8 py-2 rounded-lg bg-secondary border-2 shadow-lg shadow-black/25 hover:scale-110 duration-300 hover:rotate-1"
             >
               <span>Resume</span>
               <HardDriveDownload size={25} />
             </a>
           </div>
         </div>
-        <div className="hidden sm:flex size-[500px] overflow-hidden object-contain animate-bounce-slow">
+        <div className="hidden sm:flex size-[600px] overflow-hidden object-contain animate-bounce-slow">
           <Image src={Astronaut} alt="" />
         </div>
       </div>

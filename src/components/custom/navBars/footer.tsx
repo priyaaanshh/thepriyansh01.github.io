@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className='flex justify-center items-center gap-1 text-xl bg-primary w-full p-4'>
             <span>Made By </span>
-            <a href='https://github.com/priyaaanshh' target='blank' className='text-gradient bg-gradient'>@priyaaanshh</a>
+            <a href='https://github.com/priyaaanshh' target='blank' className='text-gradient'>@priyaaanshh</a>
         </footer>
     )
 }
