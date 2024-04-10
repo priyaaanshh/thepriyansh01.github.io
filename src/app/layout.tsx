@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   title: "Priyansh Sahu",
   description: "Fullstack developer || Freelancer",
 };
-export const dynamic = "force-dynamic";
 
 export default function RootLayout({
   children,
@@ -28,7 +27,6 @@ export default function RootLayout({
         <div className="bg-[#192289] absolute top-[-2rem] left-[-2rem] -z-10 h-3/4 w-3/5 rounded-full blur-[8rem]"></div>
         <div className="bg-[#a10505] absolute top-[6rem] right-0 -z-10 h-2/3 w-1/2 rounded-full blur-[10rem]"></div>
         <div className="bg-[#000000] absolute bottom-[0rem] -z-50 h-screen w-screen"></div>
-        <ParticleBg />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

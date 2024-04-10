@@ -88,7 +88,7 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="hidden sm:flex size-[600px] overflow-hidden object-contain animate-bounce-slow">
-          <Image src={Astronaut} alt="" />
+          <Image src={Astronaut} alt="" priority/>
         </div>
       </div>
       <div className="flex justify-center  gap-3 absolute bottom-1 sm:bottom-10 animate-bounce">
