@@ -1,6 +1,6 @@
 <br>
 
-### <div align="center">I'm [Priyansh Sahu](https://priyaaanshh.vercel.app/), a student, and developer from India. 🚀</div>
+# <div align="center">I'm [Priyansh Sahu](https://priyaaanshh.vercel.app/), a student, and developer from India. 🚀</div>
 
 - 💻 I am a undergraduate student at Indian Institute of Technology BHU (Varanasi) pursuing a Bachelor of Technology in my third year.
 
