@@ -1,6 +1,6 @@
 <br>
 
-# <div align="center">I'm [Priyansh Sahu](https://priyaaanshh.vercel.app/), a student, and developer from India. 🚀</div>
+<div align="center"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=1500&pause=1000&center=true&vCenter=true&random=false&width=435&lines=Hey%2C+It's+Priyansh+Sahu;I'm+a+MERN+Stack+Developer+;Solved+500%2B+DSA+problems" alt="Typing SVG" /></div>
 
 - 💻 I am a undergraduate student at Indian Institute of Technology BHU (Varanasi) pursuing a Bachelor of Technology in my third year.
 
