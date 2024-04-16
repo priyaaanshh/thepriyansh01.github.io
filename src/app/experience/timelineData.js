@@ -1,11 +1,5 @@
 const timelineData = [
   {
-    title: "Tech Head",
-    description: `Cerashatam 2024
-    Centenary Celebrations of Ceramic Department
-  `,
-  },
-  {
     title: "Freelancer",
     description: `Duration : June 2023 - Jul 2023
   `,
