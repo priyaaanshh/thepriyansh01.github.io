@@ -2,13 +2,13 @@
 
 <div align="center"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=1500&pause=1000&center=true&vCenter=true&random=false&width=435&lines=Hey%2C+It's+Priyansh+Sahu;I'm+a+MERN+Stack+Developer+;Solved+500%2B+DSA+problems;" alt="Typing SVG" /></div>
 
-- 💻 I am a undergraduate student at Indian Institute of Technology BHU (Varanasi) pursuing a Bachelor of Technology in my third year.
+- ### 💻 I am a undergraduate student at Indian Institute of Technology BHU (Varanasi) pursuing a Bachelor of Technology in my third year.
 
-- 📫 Reach me at priyansh.sahu.cer21@iitbhu.ac.in
+- ### 📫 Reach me at priyansh.sahu.cer21@iitbhu.ac.in
 
-- 🖥️ Visit my [Portfolio](https://priyaaanshh.vercel.app/)
+- ### 🖥️ Visit my [Portfolio](https://priyaaanshh.vercel.app/)
   
-- 📄 Take a look at my [resume](https://drive.google.com/file/d/1LmbYn9rovs5e7BffkpEhK_jnAZPV82d7/view?usp=sharing) 
+- ### 📄 Take a look at my [resume](https://drive.google.com/file/d/1LmbYn9rovs5e7BffkpEhK_jnAZPV82d7/view?usp=sharing) 
 
 <br/>
 
@@ -18,7 +18,7 @@
 </div>
 
 ## Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/priyaaaanshhh/) 
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/priyaaaaaaansh/) 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/priyansh-sahu-ab9380202) 
 [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/_thepriyansh01) 
 
@@ -34,7 +34,3 @@
 ## GitHub Activity
 [![Priyansh's github activity
 graph](https://github-readme-activity-graph.vercel.app/graph?username=priyaaanshh&bg_color=0f2d3d&color=1cadfb&line=1cadfb&point=1cadfb&area=true&hide_border=true)]()
-
-
-## GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=priyaaanshh&theme=gruvbox&no-frame=true&no-bg=false&margin-w=4)
