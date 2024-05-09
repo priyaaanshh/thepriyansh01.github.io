@@ -48,7 +48,7 @@ const Dashboard = () => {
               <GitHubLogoIcon height="40" width="40" />
             </a>
             <a
-              href="https://www.linkedin.com/in/priyansh-sahu-ab9380202/"
+              href="https://www.linkedin.com/in/priyaaanshh/"
               target="_blank"
               className="hover:rotate-[360deg] duration-700 hover:text-destructive"
             >
