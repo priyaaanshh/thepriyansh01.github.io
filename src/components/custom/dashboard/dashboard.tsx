@@ -78,7 +78,7 @@ const Dashboard = () => {
               <Send size={25} />
             </Link>
             <a
-              href="https://drive.google.com/file/d/1LmbYn9rovs5e7BffkpEhK_jnAZPV82d7/view"
+              href="https://drive.google.com/file/d/1sn-LJ_gFjXjTJ5UvSicUUtdGYOT_W1Bw/view?usp=sharing"
               target="_blank"
               className="flex justify-center items-center gap-3 w-full sm:w-max px-8 py-2 rounded-lg bg-secondary border-2 shadow-lg shadow-black/25 hover:scale-110 duration-300 hover:rotate-1"
             >
